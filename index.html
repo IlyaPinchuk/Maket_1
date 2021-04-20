@@ -1,0 +1,821 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Syne+Mono&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row header-wrapper">
+        <div class="col-4 wrapper-link d-flex justify-content-around">
+         
+          <a href="#">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20.000000pt" height="19.000000pt">
+
+              <g transform="translate(0.000000,19.000000) scale(0.100000,-0.100000)" fill="#a0a1a5" stroke="none">
+                <path class="img-svg" d="M48 174 c-75 -40 -58 -149 26 -170 111 -28 177 119 76 171 -36 19
+-67 19 -102 -1z m99 -21 c6 -16 -27 -25 -43 -12 -8 6 -14 17 -14 24 0 16 52 5
+57 -12z m-69 -5 c19 -19 15 -26 -19 -33 -37 -8 -44 -3 -29 24 12 24 30 27 48
+9z m102 -34 c0 -9 -11 -14 -30 -14 -36 0 -39 13 -7 27 25 12 37 8 37 -13z
+m-106 -36 c-36 -29 -48 -29 -52 -1 -3 19 2 22 35 25 50 4 51 2 17 -24z m103
+-3 c2 -6 -3 -20 -11 -30 -14 -20 -15 -19 -24 5 -5 14 -8 29 -5 33 6 11 35 5
+40 -8z m-53 -17 c3 -13 6 -26 6 -29 0 -14 -31 -18 -58 -8 l-27 11 28 24 c35
+30 43 30 51 2z" />
+              </g>
+            </svg>
+
+          </a>
+          <a href="#">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20.000000pt" height="20.000000pt">
+              <g transform="translate(0.000000,20.000000) scale(0.100000,-0.100000)" fill="#a0a1a5" stroke="none">
+                <path class="img-svg" d="M4 187 c-2 -8 -4 -52 -2 -98 l3 -84 98 -3 98 -3 -3 98 -3 98 -93 3
+c-71 2 -94 0 -98 -11z m94 -94 c3 -18 6 -20 16 -10 8 6 11 18 9 24 -3 8 3 13
+16 13 13 0 19 -5 15 -14 -3 -8 -1 -17 5 -21 17 -10 13 -45 -5 -52 -9 -3 -25
+-1 -35 5 -11 7 -20 8 -24 2 -3 -6 -19 -10 -36 -10 -28 0 -29 2 -29 46 0 45 0
+45 33 42 24 -2 33 -8 35 -25z" />
+                <path d="M55 90 c4 -6 11 -8 16 -5 14 9 11 15 -7 15 -8 0 -12 -5 -9 -10z" />
+                <path d="M50 60 c0 -5 7 -10 15 -10 8 0 15 5 15 10 0 6 -7 10 -15 10 -8 0 -15
+-4 -15 -10z" />
+                <path d="M138 53 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
+              </g>
+            </svg>
+
+          </a>
+          <a href="#">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20.000000pt" height="20.000000pt">
+
+              <g transform="translate(0.000000,20.000000) scale(0.100000,-0.100000)" fill="#a0a1a5" stroke="none">
+                <path class="img-svg" d="M4 187 c-2 -8 -4 -52 -2 -98 l3 -84 95 0 95 0 0 95 0 95 -93 3 c-71
+2 -94 0 -98 -11z m161 -37 c14 -22 -47 -110 -77 -110 -4 0 -13 18 -19 40 -8
+25 -18 40 -28 40 -13 1 -12 3 3 15 28 21 46 18 46 -7 0 -37 14 -52 30 -33 10
+11 10 18 1 29 -10 11 -8 17 6 25 23 13 30 13 38 1z" />
+              </g>
+            </svg>
+
+          </a>
+          <a href="#">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="20.000000pt" height="20.000000pt">
+
+              <g transform="translate(0.000000,20.000000) scale(0.100000,-0.100000)" fill="#a0a1a5" stroke="none">
+                <path class="img-svg" d="M4 187 c-2 -8 -4 -52 -2 -98 l3 -84 95 0 95 0 0 95 0 95 -93 3 c-71
+2 -94 0 -98 -11z m81 -87 c0 -18 -6 -26 -23 -28 -24 -4 -38 18 -28 44 3 9 15
+14 28 12 17 -2 23 -10 23 -28z m80 0 c0 -18 -6 -26 -23 -28 -13 -2 -25 3 -28
+12 -10 26 4 48 28 44 17 -2 23 -10 23 -28z" />
+              </g>
+            </svg>
+
+          </a>
+        </div>
+        <div class="col-4">
+          <div class="wrapper-logo d-flex justify-content-center">
+            <img src="img/logo.svg" alt="">
+          </div>
+        </div>
+
+        <div class="col-4">
+          <nav class=" d-flex  wrapper-menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+                <img src="img/menu.svg" alt="">
+              </span>
+            </button>
+          </nav>
+        </div>
+
+      </div>
+
+
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="main-block">
+        <div class=" row main-block__item d-flex justify-content-around ">
+          <div class="square col-3  d-flex justify-content-center">
+            <div class="date-photo date-item d-flex justify-content-between">
+              <div>
+                <h3>Awesome Day</h3>
+                <p>View from above</p>
+              </div>
+              <div>
+                <h3>JAN</h3>
+                <p>25th</p>
+
+              </div>
+
+            </div>
+            <img src="img/main/m-img-1.png" alt="">
+            <div class="pop d-flex justify-content-between">
+              <div>
+                <img src="img/like/Heart.png" alt=""> 37
+                <img src="img/like/message.png" alt=""> 15
+              </div>
+              <div class="full">
+                <img src="img/full.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="square col-3 d-flex justify-content-center ">
+            <div class="date-photo date-item d-flex justify-content-between">
+              <div>
+                <h3>Awesome Day</h3>
+                <p>View from above</p>
+              </div>
+              <div>
+                <h3>JAN</h3>
+                <p>25th</p>
+
+              </div>
+
+            </div>
+            <img src="img/main/m-img-2.png" alt="">
+            <div class="pop d-flex justify-content-between">
+              <div>
+                <img src="img/like/Heart.png" alt=""> 37
+                <img src="img/like/message.png" alt=""> 15
+              </div>
+              <div class="full">
+                <img src="img/full.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="square col-3 d-flex justify-content-center ">
+            <div class="date-photo date-item d-flex justify-content-between">
+              <div>
+                <h3>Awesome Day</h3>
+                <p>View from above</p>
+              </div>
+              <div>
+                <h3>JAN</h3>
+                <p>25th</p>
+
+              </div>
+
+            </div>
+            <img src="img/main/m-img-3.png" alt="">
+            <div class="pop d-flex justify-content-between">
+              <div>
+                <img src="img/like/Heart.png" alt=""> 37
+                <img src="img/like/message.png" alt=""> 15
+              </div>
+              <div class="full">
+                <img src="img/full.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="square col-3 d-flex justify-content-center ">
+            <div class="date-photo date-item d-flex justify-content-between">
+              <div>
+                <h3>Awesome Day</h3>
+                <p>View from above</p>
+              </div>
+              <div>
+                <h3>JAN</h3>
+                <p>25th</p>
+
+              </div>
+
+            </div>
+            <img src="img/main/m-img-4.png" alt="">
+            <div class="pop d-flex justify-content-between">
+              <div>
+                <img src="img/like/Heart.png" alt=""> 37
+                <img src="img/like/message.png" alt=""> 15
+              </div>
+              <div class="full">
+                <img src="img/full.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="square col-3 d-flex justify-content-center ">
+            <div class="date-photo date-item d-flex justify-content-between">
+              <div>
+                <h3>Awesome Day</h3>
+                <p>View from above</p>
+              </div>
+              <div>
+                <h3>JAN</h3>
+                <p>25th</p>
+
+              </div>
+
+            </div>
+            <img src="img/main/m-img-5.png" alt="">
+            <div class="pop d-flex justify-content-between">
+              <div class="anim-icon">
+                <img src="img/like/Heart.png" alt=""> 37
+                <img src="img/like/message.png" alt=""> 15
+              </div>
+              <div class="full">
+                <img src="img/full.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="square col-3 d-flex justify-content-center ">
+            <div class="date-photo date-item d-flex justify-content-between">
+              <div>
+                <h3>Awesome Day</h3>
+                <p>View from above</p>
+              </div>
+              <div>
+                <h3>JAN</h3>
+                <p>25th</p>
+
+              </div>
+
+            </div>
+            <img src="img/main/m-img-6.png" alt="">
+            <div class="pop d-flex justify-content-between">
+              <div>
+                <img src="img/like/Heart.png" alt=""> 37
+                <img src="img/like/message.png" alt=""> 15
+              </div>
+              <div class="full">
+                <img src="img/full.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="square col-3  d-flex justify-content-center">
+            <div class="date-photo date-item d-flex justify-content-between">
+              <div>
+                <h3>Awesome Day</h3>
+                <p>View from above</p>
+              </div>
+              <div>
+                <h3>JAN</h3>
+                <p>25th</p>
+
+              </div>
+
+            </div>
+            <img src="img/main/m-img-7.png" alt="">
+            <div class="pop d-flex justify-content-between">
+              <div>
+                <img src="img/like/Heart.png" alt=""> 37
+                <img src="img/like/message.png" alt=""> 15
+              </div>
+              <div class="full">
+                <img src="img/full.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="square col-3 d-flex justify-content-center ">
+            <div class="date-photo date-item d-flex justify-content-between">
+              <div>
+                <h3>Awesome Day</h3>
+                <p>View from above</p>
+              </div>
+              <div>
+                <h3>JAN</h3>
+                <p>25th</p>
+
+              </div>
+
+            </div>
+            <img src="img/main/m-img-8.png" alt="">
+            <div class="pop d-flex justify-content-between">
+              <div>
+                <img src="img/like/Heart.png" alt=""> 37
+                <img src="img/like/message.png" alt=""> 15
+              </div>
+              <div class="full">
+                <img src="img/full.png" alt="">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper-block-text">
+        <h2>A Picture Is Worth A Thousand Words</h2>
+        <p>People peter griffin high school mom bra just avenger le me students friendzoned challenge accepted. True
+          Story face troll finals derpina cereal guy lose back final week yao male.
+          Not bad luke feel like a sir bacon pizza coffee a the avengers puking rainbows nyan cat search.</p>
+        <a href="#" class="btn-cont">Learn More About Us</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper-block">
+        <div class="row main-block ">
+          <div class="col-9  wrapper-info-block">
+            <div class="row info-block-1 justify-content-around">
+              <h2>A Picture Is Worth A Thousand Words</h2>
+              <div class="col-4 block-left">
+                <p>A Picture Is Worth A Thousand Words </p>
+                <img src="img/main/picture-img1.png" alt="">
+                <p>Flight over the country - 2014</p>
+              </div>
+
+              <div class="col-6 block-center">
+                <div class="d-flex justify-content-between">
+                  <p>01/17/2014</p>
+                  <p>8 minutes read
+                    <img src="img/icon/time-icon.png" alt=""></p>
+                </div>
+                <div class="wrapper-text">
+                  <p>Dad blizzard coffee unsave facepalm face feel like a sir tank mother aww yeah.
+                    Anonymous easter puking rainbows bear wodka simpson amnesia read cookie monster final week grey.</p>
+                  <p>Mom hammer creepy me gusta morbi eat le friend steve jobs cellphone clinton cereal guy.
+                    Good guy high school on okay a bacon homework in joke dog. Not Okay if you know what i mean nap
+                    monocle oh stop it,
+                    you pizza diablo 3 captain on weekend elephant.
+                    I Dont Get It drink ba dumm tss amet basic math female phone gentlemen strangers.</p>
+                </div>
+              </div>
+              <div class="col-2 block-right">
+                <div class="">https://www.facebook.com/
+                <h3>Author</h3>
+                <a href="">Jonas Duri</a>
+                <a href=""><img src="img/ava/avatar.png" alt="">
+                </a>
+              </div>
+                <div class="wrapper-hover">
+                  <img class="item-1" src="img/ava/hover.png" alt="">
+                </div>
+                <a href="#"><img src="img/ava/img-avatar-1.png" alt=""></a>
+                <a href="#"><img src="img/ava/img-avatar-2.png" alt=""></a>
+                <a href="#"><img src="img/ava/img-avatar-3.png" alt=""></a>
+                <a href="#"><img src="img/ava/img-avatar-4.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-3 wrapper-accordion">
+
+            <div class="accordion">
+              <h3>Categorys</h3>
+              <div class="contentBx">
+                <div class="label">Traveling ( <span>9</span> )
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span></div>
+                <div class="content">
+
+                  <p><span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+
+                  <p><span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    Trip to New York City was (..))</p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">Photos (<span>28</span> )
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">Lifestyle (<span>4</span> )
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">Inspiration ( <span>4</span> )
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">Fashion (<span>28</span>)
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+                </div>
+
+              </div>
+              <div class="contentBx">
+                <div class="label">Business (<span>9</span>)
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+                </div>
+
+              </div>
+              <div class="contentBx">
+                <div class="label">Technology (<span>16</span>)
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+        <div class="row main-block ">
+          <div class="col-9  wrapper-info-block">
+            <div class="row info-block-1 justify-content-around">
+              <h2>Trip To New York Was Awesome</h2>
+              <div class="col-4 block-left">
+                <p>My First Trip to NYC </p>
+                <img src="img/main/manhatten.png" alt="">
+                <p>Manhatten Skyline- 2014</p>
+              </div>
+
+              <div class="col-6 block-center">
+                <div class="d-flex justify-content-between">
+                  <p>01/15/2014</p>
+                  <p>14 minutes read
+                    <img src="img/icon/time-icon.png" alt=""></p>
+                </div>
+                <div class="wrapper-text">
+                  <p>Dad blizzard coffee unsave facepalm face feel like a sir tank mother aww yeah.
+                    Anonymous easter puking rainbows bear wodka simpson amnesia read cookie monster final week grey.</p>
+                  <p>Mom hammer creepy me gusta morbi eat le friend steve jobs cellphone clinton cereal guy.
+                    Good guy high school on okay a bacon homework in joke dog. Not Okay if you know what i mean nap
+                    monocle oh stop it,
+                    you pizza diablo 3 captain on weekend elephant.
+                    I Dont Get It drink ba dumm tss amet basic math female phone gentlemen strangers.</p>
+                </div>
+              </div>
+              <div class="col-2 block-right">
+                <h3>Author</h3>
+                <a href="">Jonas Duri</a>
+                <a href=""><img src="img/ava/avatar.png" alt="">
+                </a>
+                <div class="wrapper-hover">
+                  <img class="item-1" src="img/ava/hover.pngc1" alt="">
+                </div>
+                <a href="https://www.facebook.com/"><img src="img/ava/img-avatar-1.png" alt=""></a>
+                <a href="#"><img src="img/ava/img-avatar-2.png" alt=""></a>
+                <a href="#"><img src="img/ava/img-avatar-3.png" alt=""></a>
+                <a href="#"><img src="img/ava/img-avatar-4.png" alt=""></a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-3 wrapper-accordion">
+
+            <div class="accordion">
+              <h3>Archive</h3>
+              <div class="contentBx">
+                <div class="label">2014 ( <span>4</span> )
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span></div>
+                <div class="content">
+
+                  <p><span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+
+                  <p><span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    Trip to New York City was (..))</p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">January (<span>2</span> )
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+
+                  <p><span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+
+                  <p><span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    Trip to New York City was (..))</p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">February (<span>28</span> )
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">March ( <span>4</span> )
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+
+                </div>
+              </div>
+              <div class="contentBx">
+                <div class="label">April (<span>4</span>)
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+                </div>
+
+              </div>
+              <div class="contentBx">
+                <div class="label">May (<span>28</span>)
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+                </div>
+
+              </div>
+              <div class="contentBx">
+                <div class="label">June (<span>9</span>)
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+                </div>
+
+              </div>
+              <div class="contentBx">
+                <div class="label">July (<span>16</span>)
+                  <span class="wrapper-arrow">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                      <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                    </svg>
+                  </span>
+                </div>
+                <div class="content">
+                  <p>
+                    <span class="wrapper-arrow">
+                      <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+                      </svg>
+                    </span>
+                    A Picture is Worth A (..)</p>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="wrapper-contact">
+            <div class="wrapper-text">
+              <h3>Contact Me</h3>
+              <p>Mom hammer creepy me gusta morbi eat le friend
+                steve jobs cellphone clinton cereal guy. </p>
+            </div>
+            <div class="wrapper-form">
+              <div class="mb-3">
+                <input type="name" class="form-control" id="exampleFormControlInput" placeholder="Your Name">
+                <span>*required</span>
+              </div>
+              <div class="mb-3">
+
+                <input type="email" class="form-control" id="exampleFormControlInpu"
+                  placeholder="Your E-Mail Address">
+                <span>*please enter a valid address </span>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                  placeholder="Your Massage"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-cont">SEND E-MAIL</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row wrapper-random">
+            
+            <div class="col random-item">
+              <h3>Random Post</h3>
+              <div>
+              <img src="img/footer/random-item-1.png" alt="">
+            </div>
+              <p>Some advise on Photography</p>
+            </div>
+            <div class="col random-item">
+              <h3>Random Post</h3>
+              <div>
+              <img src="img/footer/random-item-2.png" alt="">
+            </div>
+              <p>Some advise on Photography</p>
+           
+          </div>
+            <div class="wrapper-subscribe">
+              <img src="img/logo.svg" alt="">
+              <h3>Newsletter</h3>
+              <input type="email" class="form-control" id="exampleFormControlInput1"
+                  placeholder="Your E-Mail Address">
+                  <button type="submit" class="btn btn-primary btn-cont">SUBSCRIBE</button>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let acc = document.getElementsByClassName("label");
+    let i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function () {
+        this.classList.toggle("active");
+
+        this.nextElementSibling.classList.toggle("show");
+      }
+    }
+  </script>
+
+
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+  </script> -->
+</body>
+
+</html>
